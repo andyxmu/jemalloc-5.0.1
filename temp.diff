@@ -1,0 +1,507 @@
+./bin/jeprof.in:	var p = root.createSVGPoint();
+./bin/jeprof.in:	var k = root.createSVGMatrix().translate(p.x, p.y).scale(z).translate(-p.x, -p.y);
+./bin/jeprof.in:		setCTM(stateTarget, root.createSVGMatrix().translate(p.x - stateOrigin.x, p.y - stateOrigin.y).multiply(g.getCTM().inverse()).multiply(stateTarget.getCTM()));
+./bin/jeprof.in:          || die("Unable to create profile directory $profile_dir: $!\n");
+./bin/jeprof:	var p = root.createSVGPoint();
+./bin/jeprof:	var k = root.createSVGMatrix().translate(p.x, p.y).scale(z).translate(-p.x, -p.y);
+./bin/jeprof:		setCTM(stateTarget, root.createSVGMatrix().translate(p.x - stateOrigin.x, p.y - stateOrigin.y).multiply(g.getCTM().inverse()).multiply(stateTarget.getCTM()));
+./bin/jeprof:          || die("Unable to create profile directory $profile_dir: $!\n");
+./build-aux/config.guess:# temporary files to be created and, as you can see below, it is a
+./build-aux/config.guess:# Portable tmp directory creation inspired by the Autoconf team.
+./build-aux/config.guess: { tmp=$TMPDIR/cg-$$ && (umask 077 && mkdir $tmp) && echo "Warning: creating insecure temp directory" >&2 ; } ||
+./build-aux/config.guess: { echo "$me: cannot create a temporary directory in $TMPDIR" >&2 ; exit 1 ; } ;
+./build-aux/install-sh:# `make' implicit rules from creating a file called install from it
+./build-aux/install-sh:# might cause directories to be created, which would be especially bad 
+./ChangeLog:  - Mask signals during background thread creation.  This prevents signals from
+./ChangeLog:  - Support manually created arena destruction, such that all data and metadata
+./ChangeLog:    + arenas.create
+./ChangeLog:  - Fix prof_tctx_dump_iter() to filter out nodes that were created after heap
+./ChangeLog:  - Fix ixallocx_prof_sample() to never modify nor create sampled small
+./ChangeLog:  - Add support for explicit tcaches.  The "tcache.create", "tcache.flush", and
+./ChangeLog:    backtrace creation in imemalign().  This bug impacted posix_memalign() and
+./ChangeLog:  - Add the "arenas.extend" mallctl, which allows applications to create
+./ChangeLog:  - Don't mangle pthread_create() when --with-private-namespace is specified.
+./ChangeLog:    multiple threads raced to create a new run of backing pages.
+./config.log:It was created by configure, which was
+./config.log:configure:10210: checking for pthread_create in -lpthread
+./config.log:configure:12289: creating ./config.status
+./config.log:config.status:1069: creating Makefile
+./config.log:config.status:1069: creating jemalloc.pc
+./config.log:config.status:1069: creating doc/html.xsl
+./config.log:config.status:1069: creating doc/manpages.xsl
+./config.log:config.status:1069: creating doc/jemalloc.xml
+./config.log:config.status:1069: creating include/jemalloc/jemalloc_macros.h
+./config.log:config.status:1069: creating include/jemalloc/jemalloc_protos.h
+./config.log:config.status:1069: creating include/jemalloc/jemalloc_typedefs.h
+./config.log:config.status:1069: creating include/jemalloc/internal/jemalloc_preamble.h
+./config.log:config.status:1069: creating test/test.sh
+./config.log:config.status:1069: creating test/include/test/jemalloc_test.h
+./config.log:config.status:1069: creating config.stamp
+./config.log:config.status:1069: creating bin/jemalloc-config
+./config.log:config.status:1069: creating bin/jemalloc.sh
+./config.log:config.status:1069: creating bin/jeprof
+./config.log:config.status:1069: creating include/jemalloc/jemalloc_defs.h
+./config.log:config.status:1069: creating include/jemalloc/internal/jemalloc_internal_defs.h
+./config.log:config.status:1069: creating test/include/test/jemalloc_test_defs.h
+./config.log:ac_cv_lib_pthread_pthread_create=yes
+./config.status:# Run this file to recreate the current configuration.
+./config.status:    # 2) DJGPP < 2.04 has no symlinks; `ln -s' creates a wrapper executable.
+./config.status:  } || test -d "$as_dir" || as_fn_error $? "cannot create directory $as_dir"
+./config.status:  set X /bin/bash './configure'  '--prefix=/usr/local/jemalloc-5.0.1' '--enable-prof' '--enable-prof-libunwind' '--disable-cache-oblivious' $ac_configure_extra_args --no-create --no-recursion
+./config.status:  wrap_syms=" __libc_calloc __libc_free __libc_malloc __libc_memalign __libc_realloc __libc_valloc pthread_create __free_hook __malloc_hook __realloc_hook __memalign_hook"
+./config.status:  wrap_syms=" __libc_calloc __libc_free __libc_malloc __libc_memalign __libc_realloc __libc_valloc pthread_create __free_hook __malloc_hook __realloc_hook __memalign_hook"
+./config.status:# creating and moving files from /tmp can sometimes cause problems.
+./config.status:# after its creation but before its name has been assigned to `$tmp'.
+./config.status:} || as_fn_error $? "cannot create a temporary directory in ." "$LINENO" 5
+./config.status:      { $as_echo "$as_me:${as_lineno-$LINENO}: creating $ac_file" >&5
+./config.status:$as_echo "$as_me: creating $ac_file" >&6;}
+./config.status:      || as_fn_error $? "could not create $ac_file" "$LINENO" 5 ;;
+./config.status:  >$ac_tmp/out || as_fn_error $? "could not create $ac_file" "$LINENO" 5
+./config.status:  || as_fn_error $? "could not create $ac_file" "$LINENO" 5
+./config.status:      || as_fn_error $? "could not create $ac_file" "$LINENO" 5
+./config.status:	|| as_fn_error $? "could not create $ac_file" "$LINENO" 5
+./config.status:      || as_fn_error $? "could not create -" "$LINENO" 5
+./configure:# Guess values for system-dependent variables and create Makefiles.
+./configure:  } || test -d "$as_dir" || as_fn_error $? "cannot create directory $as_dir"
+./configure:    { $as_echo "$as_me: error: cannot create $as_me.lineno; rerun with a POSIX shell" >&2; as_fn_exit 1; }
+./configure:    # 2) DJGPP < 2.04 has no symlinks; `ln -s' creates a wrapper executable.
+./configure:no_create=
+./configure:  -no-create | --no-create | --no-creat | --no-crea | --no-cre \
+./configure:    no_create=yes ;;
+./configure:  -n, --no-create         do not create output files
+./configure:  # created by the PGI compiler (conftest_ipa8_conftest.oo), as it would
+./configure:It was created by $as_me, which was
+./configure:# Strip out --no-create and --no-recursion so they do not pile up.
+./configure:    -no-create | --no-c* | -n | -no-recursion | --no-r*) continue ;;
+./configure:  { $as_echo "$as_me:${as_lineno-$LINENO}: creating cache $cache_file" >&5
+./configure:$as_echo "$as_me: creating cache $cache_file" >&6;}
+./configure:# Try to create an executable without -o first, disregard a.out.
+./configure:as_fn_error 77 "C compiler cannot create executables
+./configure:# Remember, the first character of IFS is used to create $*,
+./configure:# Remember, the first character of IFS is used to create $*,
+./configure:# ./install, which can be erroneously created by make from ./install.sh.
+./configure:    { $as_echo "$as_me:${as_lineno-$LINENO}: result: Missing VERSION file, and unable to generate it; creating bogus VERSION" >&5
+./configure:$as_echo "Missing VERSION file, and unable to generate it; creating bogus VERSION" >&6; }
+./configure:      { $as_echo "$as_me:${as_lineno-$LINENO}: checking for pthread_create in -lpthread" >&5
+./configure:$as_echo_n "checking for pthread_create in -lpthread... " >&6; }
+./configure:if ${ac_cv_lib_pthread_pthread_create+:} false; then :
+./configure:char pthread_create ();
+./configure:return pthread_create ();
+./configure:  ac_cv_lib_pthread_pthread_create=yes
+./configure:  ac_cv_lib_pthread_pthread_create=no
+./configure:{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_pthread_pthread_create" >&5
+./configure:$as_echo "$ac_cv_lib_pthread_pthread_create" >&6; }
+./configure:if test "x$ac_cv_lib_pthread_pthread_create" = xyes; then :
+./configure:  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for library containing pthread_create" >&5
+./configure:$as_echo_n "checking for library containing pthread_create... " >&6; }
+./configure:if ${ac_cv_search_pthread_create+:} false; then :
+./configure:char pthread_create ();
+./configure:return pthread_create ();
+./configure:  ac_cv_search_pthread_create=$ac_res
+./configure:  if ${ac_cv_search_pthread_create+:} false; then :
+./configure:if ${ac_cv_search_pthread_create+:} false; then :
+./configure:  ac_cv_search_pthread_create=no
+./configure:{ $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_search_pthread_create" >&5
+./configure:$as_echo "$ac_cv_search_pthread_create" >&6; }
+./configure:ac_res=$ac_cv_search_pthread_create
+./configure:  wrap_syms="${wrap_syms} pthread_create"
+./configure:  { $as_echo "$as_me:${as_lineno-$LINENO}: result: Forcing no lazy-lock because thread creation monitoring is unimplemented" >&5
+./configure:$as_echo "Forcing no lazy-lock because thread creation monitoring is unimplemented" >&6; }
+./configure:{ $as_echo "$as_me:${as_lineno-$LINENO}: creating $CONFIG_STATUS" >&5
+./configure:$as_echo "$as_me: creating $CONFIG_STATUS" >&6;}
+./configure:# Run this file to recreate the current configuration.
+./configure:    # 2) DJGPP < 2.04 has no symlinks; `ln -s' creates a wrapper executable.
+./configure:  } || test -d "$as_dir" || as_fn_error $? "cannot create directory $as_dir"
+./configure:  set X $SHELL '$0' $ac_configure_args \$ac_configure_extra_args --no-create --no-recursion
+./configure:# creating and moving files from /tmp can sometimes cause problems.
+./configure:# after its creation but before its name has been assigned to `$tmp'.
+./configure:} || as_fn_error $? "cannot create a temporary directory in ." "$LINENO" 5
+./configure:      { $as_echo "$as_me:${as_lineno-$LINENO}: creating $ac_file" >&5
+./configure:$as_echo "$as_me: creating $ac_file" >&6;}
+./configure:      || as_fn_error $? "could not create $ac_file" "$LINENO" 5 ;;
+./configure:  >$ac_tmp/out || as_fn_error $? "could not create $ac_file" "$LINENO" 5
+./configure:  || as_fn_error $? "could not create $ac_file" "$LINENO" 5
+./configure:      || as_fn_error $? "could not create $ac_file" "$LINENO" 5
+./configure:	|| as_fn_error $? "could not create $ac_file" "$LINENO" 5
+./configure:      || as_fn_error $? "could not create -" "$LINENO" 5
+./configure:  as_fn_error $? "write failure creating $CONFIG_STATUS" "$LINENO" 5
+./configure:if test "$no_create" != yes; then
+./configure.ac:      [Missing VERSION file, and unable to generate it; creating bogus VERSION])
+./configure.ac:  AC_CHECK_LIB([pthread], [pthread_create], [JE_APPEND_VS(LIBS, -lpthread)],
+./configure.ac:               [AC_SEARCH_LIBS([pthread_create], , ,
+./configure.ac:  wrap_syms="${wrap_syms} pthread_create"
+./configure.ac:  AC_MSG_RESULT([Forcing no lazy-lock because thread creation monitoring is unimplemented])
+匹配到二进制文件 ./cscope.out
+./doc/jemalloc.xml.in:    <!-- Each refname causes a man page file to be created.  Only if this were
+./doc/jemalloc.xml.in:            linkend="tcache.create"><mallctl>tcache.create</mallctl></link>
+./doc/jemalloc.xml.in:        set to true, background threads are created on demand (the number of
+./doc/jemalloc.xml.in:        <listitem><para>Approximate time in milliseconds from the creation of a
+./doc/jemalloc.xml.in:        purged immediately upon creation.  A decay time of -1 disables purging.
+./doc/jemalloc.xml.in:        <listitem><para>Approximate time in milliseconds from the creation of a
+./doc/jemalloc.xml.in:        purged immediately upon creation.  A decay time of -1 disables purging.
+./doc/jemalloc.xml.in:        in newly created threads.  The initial setting for newly created threads
+./doc/jemalloc.xml.in:        created, so the input string need not be maintained after this interface
+./doc/jemalloc.xml.in:      <varlistentry id="tcache.create">
+./doc/jemalloc.xml.in:          <mallctl>tcache.create</mallctl>
+./doc/jemalloc.xml.in:        make the identifier available for use during a future tcache creation.
+./doc/jemalloc.xml.in:        interface can only be used with arenas explicitly created via <link
+./doc/jemalloc.xml.in:        linkend="arenas.create"><mallctl>arenas.create</mallctl></link>.  None
+./doc/jemalloc.xml.in:        linkend="arenas.create"><mallctl>arenas.create</mallctl></link> may
+./doc/jemalloc.xml.in:        the creation of a set of unused dirty pages until an equivalent set of
+./doc/jemalloc.xml.in:        the creation of a set of unused muzzy pages until an equivalent set of
+./doc/jemalloc.xml.in:        to control allocation for arenas explicitly created via <link
+./doc/jemalloc.xml.in:        linkend="arenas.create"><mallctl>arenas.create</mallctl></link> such
+./doc/jemalloc.xml.in:        (by specifying the custom extent hook functions during arena creation),
+./doc/jemalloc.xml.in:        but the automatically created arenas will have already created extents
+./doc/jemalloc.xml.in:        milliseconds from the creation of a set of unused dirty pages until an
+./doc/jemalloc.xml.in:        during arena creation.  See <link
+./doc/jemalloc.xml.in:        milliseconds from the creation of a set of unused muzzy pages until an
+./doc/jemalloc.xml.in:        during arena creation.  See <link
+./doc/jemalloc.xml.in:      <varlistentry id="arenas.create">
+./doc/jemalloc.xml.in:          <mallctl>arenas.create</mallctl>
+./doc/jemalloc.xml.in:        <listitem><para>Explicitly create a new arena outside the range of
+./doc/jemalloc.xml.in:        in newly created threads.  See the <link
+./doc/jemalloc.xml.in:        <listitem><para>Approximate time in milliseconds from the creation of a
+./doc/jemalloc.xml.in:        <listitem><para>Approximate time in milliseconds from the creation of a
+./doc/jemalloc.xml.in:        created.  If &lt;i&gt; equals <constant>0</constant> or
+./doc/jemalloc.xml.in:        <listitem><para>Cumulative number of slabs created.</para></listitem>
+./doc/jemalloc.xml.in:    created:
+./doc/jemalloc.xml:    <!-- Each refname causes a man page file to be created.  Only if this were
+./doc/jemalloc.xml:            linkend="tcache.create"><mallctl>tcache.create</mallctl></link>
+./doc/jemalloc.xml:        set to true, background threads are created on demand (the number of
+./doc/jemalloc.xml:        <listitem><para>Approximate time in milliseconds from the creation of a
+./doc/jemalloc.xml:        purged immediately upon creation.  A decay time of -1 disables purging.
+./doc/jemalloc.xml:        <listitem><para>Approximate time in milliseconds from the creation of a
+./doc/jemalloc.xml:        purged immediately upon creation.  A decay time of -1 disables purging.
+./doc/jemalloc.xml:        in newly created threads.  The initial setting for newly created threads
+./doc/jemalloc.xml:        created, so the input string need not be maintained after this interface
+./doc/jemalloc.xml:      <varlistentry id="tcache.create">
+./doc/jemalloc.xml:          <mallctl>tcache.create</mallctl>
+./doc/jemalloc.xml:        make the identifier available for use during a future tcache creation.
+./doc/jemalloc.xml:        interface can only be used with arenas explicitly created via <link
+./doc/jemalloc.xml:        linkend="arenas.create"><mallctl>arenas.create</mallctl></link>.  None
+./doc/jemalloc.xml:        linkend="arenas.create"><mallctl>arenas.create</mallctl></link> may
+./doc/jemalloc.xml:        the creation of a set of unused dirty pages until an equivalent set of
+./doc/jemalloc.xml:        the creation of a set of unused muzzy pages until an equivalent set of
+./doc/jemalloc.xml:        to control allocation for arenas explicitly created via <link
+./doc/jemalloc.xml:        linkend="arenas.create"><mallctl>arenas.create</mallctl></link> such
+./doc/jemalloc.xml:        (by specifying the custom extent hook functions during arena creation),
+./doc/jemalloc.xml:        but the automatically created arenas will have already created extents
+./doc/jemalloc.xml:        milliseconds from the creation of a set of unused dirty pages until an
+./doc/jemalloc.xml:        during arena creation.  See <link
+./doc/jemalloc.xml:        milliseconds from the creation of a set of unused muzzy pages until an
+./doc/jemalloc.xml:        during arena creation.  See <link
+./doc/jemalloc.xml:      <varlistentry id="arenas.create">
+./doc/jemalloc.xml:          <mallctl>arenas.create</mallctl>
+./doc/jemalloc.xml:        <listitem><para>Explicitly create a new arena outside the range of
+./doc/jemalloc.xml:        in newly created threads.  See the <link
+./doc/jemalloc.xml:        <listitem><para>Approximate time in milliseconds from the creation of a
+./doc/jemalloc.xml:        <listitem><para>Approximate time in milliseconds from the creation of a
+./doc/jemalloc.xml:        created.  If &lt;i&gt; equals <constant>0</constant> or
+./doc/jemalloc.xml:        <listitem><para>Cumulative number of slabs created.</para></listitem>
+./doc/jemalloc.xml:    created:
+./include/jemalloc/internal/jemalloc_internal_externs.h: * arenas array are necessarily used; arenas are created lazily as needed.
+./include/jemalloc/internal/tsd_tls.h:	if (pthread_key_create(&tsd_tsd, &tsd_cleanup) != 0) {
+./include/jemalloc/internal/private_symbols.awk:        pthread_create \
+./include/jemalloc/internal/prof_inlines_b.h:prof_tdata_get(tsd_t *tsd, bool create) {
+./include/jemalloc/internal/prof_inlines_b.h:	if (create) {
+./include/jemalloc/internal/private_symbols_jet.awk:        pthread_create \
+./include/jemalloc/internal/tcache_inlines.h:		 * expensive to create one and not use it.
+./include/jemalloc/internal/tcache_inlines.h:		elm->tcache = tcache_create_explicit(tsd);
+./include/jemalloc/internal/private_namespace.gen.h:#define background_thread_create JEMALLOC_N(background_thread_create)
+./include/jemalloc/internal/private_namespace.gen.h:#define pthread_create_wrapper JEMALLOC_N(pthread_create_wrapper)
+./include/jemalloc/internal/private_namespace.gen.h:#define tcache_create_explicit JEMALLOC_N(tcache_create_explicit)
+./include/jemalloc/internal/private_namespace.gen.h:#define tcaches_create JEMALLOC_N(tcaches_create)
+./include/jemalloc/internal/arena_structs_b.h:	 * Approximate time in milliseconds from the creation of a set of unused
+./include/jemalloc/internal/arena_structs_b.h:	 * not be allocated from arenas explicitly created via the arenas.create
+./include/jemalloc/internal/arena_structs_b.h:	nstime_t		create_time;
+./include/jemalloc/internal/background_thread_externs.h:bool background_thread_create(tsd_t *tsd, unsigned arena_ind);
+./include/jemalloc/internal/background_thread_externs.h:extern int pthread_create_wrapper(pthread_t *__restrict, const pthread_attr_t *,
+./include/jemalloc/internal/jemalloc_internal_defs.h.in: * FreeBSD, pthread_key_create() allocates, which if used during malloc
+./include/jemalloc/internal/jemalloc_internal_defs.h: * FreeBSD, pthread_key_create() allocates, which if used during malloc
+./include/jemalloc/internal/prof_structs.h:	 * UID that distinguishes multiple tctx's created by the same thread,
+./include/jemalloc/internal/prof_structs.h:	 * - Although a single "producer" thread must create all tctx's which
+./include/jemalloc/internal/atomic_msvc.h:#  error "Don't know how to create atomics for this platform for MSVC."
+./include/jemalloc/internal/tcache_externs.h: * Explicit tcaches, managed via the tcache.{create,flush,destroy} mallctls and
+./include/jemalloc/internal/tcache_externs.h: * explicit tcache is created without a disproportionate impact on memory usage.
+./include/jemalloc/internal/tcache_externs.h:tcache_t *tcache_create_explicit(tsd_t *tsd);
+./include/jemalloc/internal/tcache_externs.h:bool	tcaches_create(tsd_t *tsd, unsigned *r_ind);
+./include/jemalloc/internal/private_namespace.h:#define background_thread_create JEMALLOC_N(background_thread_create)
+./include/jemalloc/internal/private_namespace.h:#define pthread_create_wrapper JEMALLOC_N(pthread_create_wrapper)
+./include/jemalloc/internal/private_namespace.h:#define tcache_create_explicit JEMALLOC_N(tcache_create_explicit)
+./include/jemalloc/internal/private_namespace.h:#define tcaches_create JEMALLOC_N(tcaches_create)
+./include/jemalloc/internal/hooks.h:#define creat JEMALLOC_HOOK(creat, hooks_libc_hook)
+./include/jemalloc/internal/bin_stats.h:	/* Total number of slabs created for this bin's size class. */
+./include/jemalloc/internal/tsd_generic.h:	if (pthread_key_create(&tsd_tsd, tsd_cleanup_wrapper) != 0) {
+./INSTALL.md:would create a dependency on xsltproc in packaged releases, hence the
+./INSTALL.md:    Enable code that wraps pthread_create() to detect when an application
+./INSTALL.md:tree.  For example, you can create an 'obj' directory, and from within that
+匹配到二进制文件 ./lib/libjemalloc.so.2
+匹配到二进制文件 ./lib/libjemalloc.a
+匹配到二进制文件 ./lib/libjemalloc_pic.a
+匹配到二进制文件 ./src/ckh.pic.o
+./src/base.c:		/* No arena context as we are creating new arenas. */
+./src/tsd.c:		 * wouldn't cause re-creation of the tsd.  This time, do
+./src/mutex.c: * We intercept pthread_create() calls in order to toggle isthreaded if the
+./src/mutex.c:pthread_create(pthread_t *__restrict thread,
+./src/mutex.c:	return pthread_create_wrapper(thread, attr, start_routine, arg);
+匹配到二进制文件 ./src/extent_dss.o
+匹配到二进制文件 ./src/pages.sym.o
+匹配到二进制文件 ./src/prof.pic.o
+匹配到二进制文件 ./src/sz.pic.o
+./src/pages.c:	 * of existing mappings, and we only want to create new mappings.
+./src/pages.c:	 * hard to efficiently create aligned mappings.  The reliable, but
+./src/pages.c:	 * slow method is to create a mapping that is over-sized, then trim the
+匹配到二进制文件 ./src/prng.o
+匹配到二进制文件 ./src/prof.o
+匹配到二进制文件 ./src/tcache.pic.o
+匹配到二进制文件 ./src/rtree.o
+匹配到二进制文件 ./src/base.o
+匹配到二进制文件 ./src/sz.o
+匹配到二进制文件 ./src/div.o
+匹配到二进制文件 ./src/bitmap.sym.o
+匹配到二进制文件 ./src/rtree.pic.o
+匹配到二进制文件 ./src/mutex_pool.pic.o
+./src/tcache.sym:tcache_create_explicit
+./src/tcache.sym:tcaches_create
+匹配到二进制文件 ./src/stats.o
+匹配到二进制文件 ./src/base.sym.o
+匹配到二进制文件 ./src/tsd.sym.o
+匹配到二进制文件 ./src/prng.pic.o
+匹配到二进制文件 ./src/background_thread.o
+匹配到二进制文件 ./src/extent.sym.o
+匹配到二进制文件 ./src/pages.o
+./src/ctl.c:CTL_PROTO(tcache_create)
+./src/ctl.c:CTL_PROTO(arenas_create)
+./src/ctl.c:	{NAME("create"),	CTL(tcache_create)},
+./src/ctl.c:	{NAME("create"),	CTL(arenas_create)}
+./src/ctl.c:			            "RTLD_NEXT, \"pthread_create\"). Cannot "
+./src/ctl.c:tcache_create_ctl(tsd_t *tsd, const size_t *mib, size_t miblen, void *oldp,
+./src/ctl.c:	if (tcaches_create(tsd, &tcache_ind)) {
+./src/ctl.c:	/* Record arena index for later recycling via arenas.create. */
+./src/ctl.c:arenas_create_ctl(tsd_t *tsd, const size_t *mib, size_t miblen, void *oldp,
+匹配到二进制文件 ./src/large.pic.o
+匹配到二进制文件 ./src/bin.o
+匹配到二进制文件 ./src/witness.pic.o
+匹配到二进制文件 ./src/.jemalloc.c.swp
+匹配到二进制文件 ./src/log.o
+匹配到二进制文件 ./src/large.sym.o
+匹配到二进制文件 ./src/ckh.o
+匹配到二进制文件 ./src/large.o
+匹配到二进制文件 ./src/hash.sym.o
+匹配到二进制文件 ./src/bin.sym.o
+./src/tcache.c:/* Created manual tcache for tcache.create mallctl. */
+./src/tcache.c:tcache_create_explicit(tsd_t *tsd) {
+./src/tcache.c:tcaches_create_prep(tsd_t *tsd) {
+./src/tcache.c:tcaches_create(tsd_t *tsd, unsigned *r_ind) {
+./src/tcache.c:	if (tcaches_create_prep(tsd)) {
+./src/tcache.c:	tcache_t *tcache = tcache_create_explicit(tsd);
+./src/prof.c: * creating/destroying mutexes.
+./src/prof.c:prof_gctx_create(tsdn_t *tsdn, prof_bt_t *bt) {
+./src/prof.c:		tgctx.p = prof_gctx_create(tsd_tsdn(tsd), bt);
+./src/prof.c:	fd = creat(filename, 0644);
+./src/prof.c:		malloc_printf("<jemalloc>: creat(\"%s\"), 0644) failed\n",
+匹配到二进制文件 ./src/witness.sym.o
+匹配到二进制文件 ./src/tsd.o
+匹配到二进制文件 ./src/witness.o
+匹配到二进制文件 ./src/hooks.o
+匹配到二进制文件 ./src/mutex_pool.o
+匹配到二进制文件 ./src/prof.sym.o
+匹配到二进制文件 ./src/extent_mmap.sym.o
+匹配到二进制文件 ./src/extent_mmap.pic.o
+匹配到二进制文件 ./src/hash.o
+匹配到二进制文件 ./src/jemalloc.o
+匹配到二进制文件 ./src/ticker.o
+./src/extent_dss.c: * Current dss precedence default, used when creating new arenas.  NB: This is
+匹配到二进制文件 ./src/arena.pic.o
+匹配到二进制文件 ./src/tcache.o
+./src/background_thread.c:/* Used for thread creation, termination and stats. */
+./src/background_thread.c:static int (*pthread_create_fptr)(pthread_t *__restrict, const pthread_attr_t *,
+./src/background_thread.c:pthread_create_wrapper_init(void) {
+./src/background_thread.c:pthread_create_wrapper(pthread_t *__restrict thread, const pthread_attr_t *attr,
+./src/background_thread.c:	pthread_create_wrapper_init();
+./src/background_thread.c:	return pthread_create_fptr(thread, attr, start_routine, arg);
+./src/background_thread.c:bool background_thread_create(tsd_t *tsd, unsigned arena_ind) NOT_REACHED
+./src/background_thread.c:background_thread_create_signals_masked(pthread_t *thread,
+./src/background_thread.c:	 * Mask signals during thread creation so that the thread inherits
+./src/background_thread.c:	int create_err = pthread_create_wrapper(thread, attr, start_routine,
+./src/background_thread.c:		malloc_printf("<jemalloc>: background thread creation "
+./src/background_thread.c:		    "(%d)\n", create_err, restore_err);
+./src/background_thread.c:	return create_err;
+./src/background_thread.c:check_background_thread_creation(tsd_t *tsd, unsigned *n_created,
+./src/background_thread.c:    bool *created_threads) {
+./src/background_thread.c:	if (likely(*n_created == n_background_threads)) {
+./src/background_thread.c:		if (created_threads[i]) {
+./src/background_thread.c:		bool create = (info->state == background_thread_started);
+./src/background_thread.c:		if (!create) {
+./src/background_thread.c:		 * mutex held here), unlock before calling pthread_create().
+./src/background_thread.c:		int err = background_thread_create_signals_masked(&info->thread,
+./src/background_thread.c:			(*n_created)++;
+./src/background_thread.c:			created_threads[i] = true;
+./src/background_thread.c:			    "creation failed (%d)\n", err);
+./src/background_thread.c:	VARIABLE_ARRAY(bool, created_threads, ncpus);
+./src/background_thread.c:		created_threads[i] = false;
+./src/background_thread.c:	/* Start working, and create more threads when asked. */
+./src/background_thread.c:	unsigned n_created = 1;
+./src/background_thread.c:		check_background_thread_creation(tsd, &n_created,
+./src/background_thread.c:		    (bool *)&created_threads);
+./src/background_thread.c:		if (created_threads[i]) {
+./src/background_thread.c:			/* Clear in case the thread wasn't created. */
+./src/background_thread.c:	 * side effects, for example triggering new arena creation (which in
+./src/background_thread.c:	 * turn triggers another background thread creation).
+./src/background_thread.c:background_thread_create(tsd_t *tsd, unsigned arena_ind) {
+./src/background_thread.c:	/* We create at most NCPUs threads. */
+./src/background_thread.c:		/* Threads are created asynchronously by Thread 0. */
+./src/background_thread.c:	 * To avoid complications (besides reentrancy), create internal
+./src/background_thread.c:	 * background threads with the underlying pthread_create.
+./src/background_thread.c:	int err = background_thread_create_signals_masked(&info->thread, NULL,
+./src/background_thread.c:		malloc_printf("<jemalloc>: arena 0 background thread creation "
+./src/background_thread.c:	/* Mark the threads we need to create for thread 0. */
+./src/background_thread.c:	return background_thread_create(tsd, 0);
+./src/background_thread.c: * wait for the pthread_create calls to trigger) because the mutex is required
+./src/background_thread.c: * before creating background threads.
+./src/background_thread.c:	pthread_create_wrapper_init();
+./src/background_thread.c:	pthread_create_fptr = dlsym(RTLD_NEXT, "pthread_create");
+./src/background_thread.c:	if (pthread_create_fptr == NULL) {
+./src/background_thread.c:			    "\"pthread_create\")\n");
+匹配到二进制文件 ./src/nstime.o
+匹配到二进制文件 ./src/jemalloc_cpp.o
+匹配到二进制文件 ./src/malloc_io.sym.o
+匹配到二进制文件 ./src/malloc_io.pic.o
+匹配到二进制文件 ./src/mutex.sym.o
+匹配到二进制文件 ./src/jemalloc_cpp.pic.o
+匹配到二进制文件 ./src/ctl.o
+匹配到二进制文件 ./src/extent_dss.pic.o
+匹配到二进制文件 ./src/hash.pic.o
+匹配到二进制文件 ./src/div.pic.o
+./src/arena.c:	nstime_copy(&astats->uptime, &arena->create_time);
+./src/arena.c:	nstime_subtract(&astats->uptime, &arena->create_time);
+./src/arena.c:	 * purge to the new limit if necessary.  Note that dirty pages created
+./src/arena.c:	/* Set arena before creating background threads. */
+./src/arena.c:	nstime_init(&arena->create_time, 0);
+./src/arena.c:	nstime_update(&arena->create_time);
+匹配到二进制文件 ./src/mutex_pool.sym.o
+匹配到二进制文件 ./src/nstime.sym.o
+匹配到二进制文件 ./src/jemalloc.sym.o
+./src/zone.c:	 * The default purgeable zone is created lazily by OSX's libc.  It uses
+./src/zone.c:	 * the default zone when it is created for "small" allocations
+./src/zone.c:	 * default purgeable zone is created when the default zone is still
+匹配到二进制文件 ./src/malloc_io.o
+匹配到二进制文件 ./src/arena.o
+匹配到二进制文件 ./src/mutex.o
+匹配到二进制文件 ./src/bitmap.o
+匹配到二进制文件 ./src/extent_dss.sym.o
+匹配到二进制文件 ./src/ctl.pic.o
+匹配到二进制文件 ./src/pages.pic.o
+匹配到二进制文件 ./src/div.sym.o
+匹配到二进制文件 ./src/ctl.sym.o
+匹配到二进制文件 ./src/mutex.pic.o
+匹配到二进制文件 ./src/tsd.pic.o
+匹配到二进制文件 ./src/ckh.sym.o
+./src/ckh.c:	 * table will have to be doubled more than once in order to create a
+./src/background_thread.sym:background_thread_create
+./src/background_thread.sym:pthread_create_wrapper
+./src/jemalloc.c: * arenas array are necessarily used; arenas are created lazily as needed.
+./src/jemalloc.c: * takes some action to create them and allocate from them.
+./src/jemalloc.c:	 * the process creation, before any separate thread normally starts
+./src/jemalloc.c:arena_new_create_background_thread(tsdn_t *tsdn, unsigned ind) {
+./src/jemalloc.c:		err = background_thread_create(tsdn_tsd(tsdn), ind);
+./src/jemalloc.c:				      "creation for arena %u. Abort.\n", ind);
+./src/jemalloc.c:	arena_new_create_background_thread(tsdn, ind);
+./src/jemalloc.c:	 * the arenas.create mallctl, which we trust mallctl synchronization to
+./src/jemalloc.c:				arena_new_create_background_thread(
+./src/jemalloc.c:	/* Prevent tsd->arenas_tdata from being (re)created. */
+./src/jemalloc.c:	 * Initialize one arena here.  The rest are lazily created in
+./src/jemalloc.c:	 * For SMP systems, create more than one arena per CPU by
+./src/jemalloc.c:		 * Need to finish init & unlock first before creating background
+./src/jemalloc.c:		 * threads (pthread_create depends on malloc).  ctl_init (which
+./src/jemalloc.c:		bool err = background_thread_create(tsd, 0);
+./src/jemalloc.c: * If an application creates a thread before doing any allocation in the main
+./src/jemalloc.c: * child: the main thread may have forked while the created thread had
+./src/extent.c: * If virtual memory is retained, create increasingly larger extents from which
+匹配到二进制文件 ./src/base.pic.o
+匹配到二进制文件 ./src/prng.sym.o
+匹配到二进制文件 ./src/jemalloc.pic.o
+匹配到二进制文件 ./src/ticker.sym.o
+匹配到二进制文件 ./src/tcache.sym.o
+匹配到二进制文件 ./src/nstime.pic.o
+匹配到二进制文件 ./src/extent.o
+匹配到二进制文件 ./src/background_thread.pic.o
+匹配到二进制文件 ./src/extent_mmap.o
+匹配到二进制文件 ./src/extent.pic.o
+匹配到二进制文件 ./src/sz.sym.o
+匹配到二进制文件 ./src/hooks.pic.o
+匹配到二进制文件 ./src/hooks.sym.o
+匹配到二进制文件 ./src/log.sym.o
+匹配到二进制文件 ./src/background_thread.sym.o
+匹配到二进制文件 ./src/rtree.sym.o
+匹配到二进制文件 ./src/ticker.pic.o
+匹配到二进制文件 ./src/bin.pic.o
+匹配到二进制文件 ./src/bitmap.pic.o
+匹配到二进制文件 ./src/stats.pic.o
+匹配到二进制文件 ./src/arena.sym.o
+匹配到二进制文件 ./src/stats.sym.o
+匹配到二进制文件 ./src/log.pic.o
+./test/src/thd.c:thd_create(thd_t *thd, void *(*proc)(void *), void *arg) {
+./test/src/thd.c:thd_create(thd_t *thd, void *(*proc)(void *), void *arg) {
+./test/src/thd.c:	if (pthread_create(thd, NULL, proc, arg) != 0) {
+./test/src/thd.c:		test_fail("Error in pthread_create()\n");
+./test/integration/thread_arena.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz, NULL, 0),
+./test/integration/thread_arena.c:	    0, "Arena creation failure");
+./test/integration/thread_arena.c:		thd_create(&thds[i], thd_start,
+./test/integration/thread_tcache_enabled.c:	thd_create(&thd, thd_start, NULL);
+./test/integration/MALLOCX_ARENA.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz, NULL, 0),
+./test/integration/MALLOCX_ARENA.c:	    0, "Error in arenas.create");
+./test/integration/MALLOCX_ARENA.c:		thd_create(&thds[i], thd_start,
+./test/integration/xallocx.c:		assert_d_eq(mallctl("arenas.create", (void *)&ind, &sz, NULL,
+./test/integration/xallocx.c:		    0), 0, "Unexpected mallctl failure creating arena");
+./test/integration/extent.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz, NULL, 0),
+./test/integration/extent.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz,
+./test/integration/allocated.c:	thd_create(&thd, thd_start, NULL);
+./test/include/test/thd.h:void	thd_create(thd_t *thd, void *(*proc)(void *), void *arg);
+./test/unit/tsd.c:	thd_create(&thd, thd_start, (void *)MALLOC_TSD_TEST_DATA_INIT);
+./test/unit/tsd.c:	thd_create(&thd, thd_start_reincarnated, NULL);
+./test/unit/background_thread_enable.c:		assert_d_eq(mallctl("arenas.create", &id, &sz_u, NULL, 0), 0,
+./test/unit/background_thread_enable.c:		    "Failed to create arena");
+./test/unit/prof_accum.c:		thd_create(&thds[i], thd_start, (void *)&thd_args[i]);
+./test/unit/prof_thread_name.c:		thd_create(&thds[i], thd_start, (void *)&thd_args[i]);
+./test/unit/prof_reset.c:		thd_create(&thds[i], thd_start, (void *)&thd_args[i]);
+./test/unit/arena_reset.c:do_arena_create(extent_hooks_t *h) {
+./test/unit/arena_reset.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz,
+./test/unit/arena_reset.c:	arena_ind = do_arena_create(NULL);
+./test/unit/arena_reset.c:	arena_ind = do_arena_create(NULL);
+./test/unit/arena_reset.c:	arena_ind_another = do_arena_create(NULL);
+./test/unit/arena_reset.c:	arena_ind = do_arena_create(NULL);
+./test/unit/arena_reset.c:	arena_ind = do_arena_create(&hooks);
+./test/unit/stats.c:	thd_create(&thd, thd_start, NULL);
+./test/unit/stats.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz, NULL, 0),
+./test/unit/stats.c:	    0, "Arena creation failure");
+./test/unit/background_thread.c:	/* Background_thread creation tests reentrancy naturally. */
+./test/unit/decay.c:do_arena_create(ssize_t dirty_decay_ms, ssize_t muzzy_decay_ms) {
+./test/unit/decay.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz, NULL, 0),
+./test/unit/decay.c:	arena_ind = do_arena_create(0, 0);
+./test/unit/decay.c:	assert_d_eq(mallctl("tcache.create", (void *)&tcache_ind, &sz,
+./test/unit/decay.c:	unsigned arena_ind = do_arena_create(ddt, mdt);
+./test/unit/decay.c:	unsigned arena_ind = do_arena_create(0, 0);
+./test/unit/decay.c:	unsigned arena_ind = do_arena_create(-1, -1);
+./test/unit/mtx.c:		thd_create(&thds[i], thd_start, (void *)&arg);
+./test/unit/fork.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz, NULL, 0),
+./test/unit/fork.c:	thd_create(&child, do_fork_thd, NULL);
+./test/unit/pack.c:arenas_create_mallctl(void) {
+./test/unit/pack.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz, NULL, 0),
+./test/unit/pack.c:	    0, "Error in arenas.create");
+./test/unit/pack.c:	unsigned arena_ind = arenas_create_mallctl();
+./test/unit/stats_print.c:			assert_d_eq(mallctl("arenas.create", (void *)&arena_ind,
+./test/unit/mallctl.c:		assert_d_eq(mallctl("tcache.create", (void *)&tis[i], &sz, NULL,
+./test/unit/mallctl.c:		assert_d_eq(mallctl("tcache.create", (void *)&tis[i], &sz, NULL,
+./test/unit/mallctl.c:TEST_BEGIN(test_arenas_create) {
+./test/unit/mallctl.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena, &sz, NULL, 0), 0,
+./test/unit/mallctl.c:	    test_arenas_create,
+./test/unit/retained.c:do_arena_create(extent_hooks_t *h) {
+./test/unit/retained.c:	assert_d_eq(mallctl("arenas.create", (void *)&arena_ind, &sz,
+./test/unit/retained.c:	arena_ind = do_arena_create(NULL);
+./test/unit/retained.c:		thd_create(&threads[i], thd_start, NULL);
+./test/unit/retained.c:		 * Clean up arena.  Destroying and recreating the arena
+./test/unit/retained.c:		assert_u_eq(do_arena_create(NULL), arena_ind,
+./test/unit/mq.c:	thd_create(&receiver, thd_receiver_start, (void *)&mq);
+./test/unit/mq.c:		thd_create(&senders[i], thd_sender_start, (void *)&mq);
